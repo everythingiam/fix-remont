@@ -1,0 +1,490 @@
+.logo{
+    background-image: url(img/logotype.svg);
+    width: 200px;
+    height: 55px;
+    background-repeat: no-repeat;
+    margin-top: 48px;
+    background-size: cover;
+    /* margin-left: 100px; */
+    cursor: pointer;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+
+}
+.container{
+    max-width: 60%;
+    margin: 0 auto 0 auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    height: 100vh;
+    margin-bottom: 130px;
+    padding-left: 6%;
+}
+:root{
+   --grey: #666;
+   --red: #F9572E;
+   --black: #000000;
+   --blue: #33B5A3;
+}
+article{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 80px 0 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.no-btn-style{
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+}
+@font-face {
+    font-family: "Muller Medium";
+    src: url(fonts/Muller/MullerMedium.ttf);
+}
+@font-face {
+    font-family: "Muller Regular";
+    src: url(fonts/Muller/MullerRegular.ttf);
+}
+body {
+    font-family: "Muller Regular";
+}
+h1{
+    color: #000;
+    font-family: "Muller Medium";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; 
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+p{
+    font-family: "Muller Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--grey);
+    margin: 0;
+}
+.article-p{
+    color: var(--black);
+    font-size: 21px;
+    line-height: 30px; 
+    margin-bottom: 44px;
+    padding-right: 48px;  
+}
+.red-btn{
+    padding: 17px 30px;
+    background-color: var(--red);
+    border-radius: 100px;
+    color: white;
+    font-family: "Muller Regular";
+    font-size: 16px;
+    font-style: normal;
+    filter: drop-shadow(0px 7px 15px rgba(249, 87, 46, 0.60));
+}
+.red-btn:hover{
+    background-color: #fc6b47;
+    transition: 0.2s;
+}
+.red-btn:active{
+    background-color: #e34a24;
+}
+.start p {
+    padding-left: 31px;
+}
+.start{
+    display: flex;
+    align-items: center;
+}
+article h1{
+    margin-bottom: 27px;
+    font-size: calc(30px + 34 * (100vw / 1280));
+    line-height: calc(54px + 10 * (100vw / 1280)); 
+}
+
+aside{
+    background-image: url(img/Bitmap.png);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    white-space: normal;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 15px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    background-image: url(img/play.svg);
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+}
+.play p{
+    display: none;
+}
+.play:hover {
+    transition: 0.1s;
+    background-image: url(img/play2.svg);
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figure a{
+    align-self: center;
+}
+.watch{
+    color: var(--red);
+    margin-top: 20px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+}
+aside .contacts{
+    height: 19px;
+    position: absolute;
+    top: 31px;
+    right: 10%;
+}
+.contacts a{
+    display: block;
+    padding-left: 30px;
+    background-image: url(img/Shape.svg);
+    background-repeat: no-repeat;
+}
+.contacts a p{
+    color: black;
+    font-size: 21px;
+    padding: 5px 0;
+}
+.scroll{
+    width:250px;
+    height: 36px;
+    text-align: left;
+    /* margin-left: 100px; */
+    margin-bottom: 48px;
+    padding: 5px 0;
+
+}
+.scroll a{
+    display: block;
+    padding-left: 50px;
+    text-decoration: none;
+    background-image: url(img/arrows.svg);
+    background-repeat: no-repeat;
+}
+.scroll a p{
+    color: var(--red);
+    font-size: 16px;
+}
+/* .scroll a:hover{
+    background-image: url(img/arrows2.svg);
+} */
+.table{
+    margin-bottom: 180px;
+}
+.table section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    max-width: 100%;
+}
+.table h1, .styles h1{
+    font-size: 40px;
+    font-family: "Muller Medium";
+}
+.table p, .styles p{
+    font-size: 16px;
+    color: var(--blue);
+    margin-bottom: 63px;
+    text-transform: uppercase;
+    font-family: "Muller Medium";
+
+}
+.item{
+    border-top: solid var(--blue) 4px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.item h1{
+    font-size: 24px;
+    font-family: "Muller Medium";
+}
+.item h2{
+    font-size: calc(30px + 34 * (100vw / 1280));
+    line-height: 60px;
+    margin: 0;
+}
+.item4{
+    border: solid var(--blue) 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    gap: 10px;
+}
+.item4 h1{
+    line-height: 32px;
+}
+.item p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 0px;
+    text-transform: none;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.styles{
+    margin-bottom: 137px;
+}
+.styles p{
+    margin-bottom: 40px;
+}
+.swiper{
+    width: 100%;
+    margin: auto;
+    max-height: 500px;
+    position: relative;
+}
+.swiper p{
+    text-transform: none;
+    color: var(--grey);
+    font-size: 13px;
+}
+.swiper-slide{
+    display: flex !important;
+    height: auto !important;
+}
+.swiper-slide p{
+    max-width: 150px;
+    margin-left: 17px;
+}
+.swiper-slide img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover !important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: var(--red) !important;
+    position: absolute;
+}
+.swiper-button-prev{
+    right: 17% !important;
+    left: auto !important;
+    bottom: 0 !important;
+    top: auto !important;
+}
+.swiper-button-next{
+    right: 11% !important;
+    left: auto !important;
+    bottom: 0 !important;
+    top: auto !important;
+}
+
+.input-section {
+    border: solid var(--blue) 4px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    margin-bottom: 134px;
+}
+
+.input-group {
+    font-size: 1.25rem;
+    position: relative;
+    max-width: 500px; 
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: -2rem;
+
+}
+
+input {
+    all: unset;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--grey);
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-group input:focus {
+    border: 1px solid var(--red);
+}
+.input-group input:valid ~ label{
+    transform: translateY(-120%) scale(0.7);
+    background-color: white;
+    padding-inline: 0.3rem;
+}
+.input-group input:focus ~ label{
+    transform: translateY(-120%) scale(0.7);
+    background-color: white;
+    padding-inline: 0.3rem;
+    color: var(--red);
+}
+.input-section h1 {
+    position: absolute;
+    font-size: calc(3px + 32 * (100vw / 1280));
+    top: -33px; 
+    text-align: center;
+    background-color: white;
+    padding: 0 13px 0 13px;
+}
+.input-section .red-btn{
+    padding: 17px 30px;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.input-section a p{
+    color: var(--red);
+    margin-top: 5px;
+}
+.yes-p{
+    max-width: 300px;
+    margin-top: 50px;
+    text-align: center;
+}
+.doors{
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 350px;
+    align-items: center;
+}
+.doors img{
+    max-width: 40px;
+}
+.doors p{
+    text-transform: uppercase;
+    color: black;
+    font-family: "Muller Regular";
+    margin-left: 15px;
+}
+footer {   
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.media{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.media img:hover{
+    filter: drop-shadow(0px 7px 15px rgba(249, 87, 46, 0.60));
+    transition: 0.2s;
+}
+.media img:hover path {
+    fill: blue;
+}
+footer h1{
+    font-size: 21px;
+    font-family: "Muller Regular";
+    margin-bottom: -10px;
+}
+footer p{
+    max-width: 440px;
+    /* margin: -10px 0 76px 0; */
+    text-align: center;
+}
+hr{
+    border-top: 1px solid #CCC;  
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.contacts-footer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    width: 100%;
+    justify-content: space-between;
+}
+.contacts-footer button{
+    margin: 5px;
+}
+.mail{
+    text-decoration: underline var(--red);
+}
+.mail:hover{
+    color: var(--red);
+}
+
+@media (max-width: 1281px) {
+    .article-p{
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    .logo{
+        width: 133px;
+        height: 36px;
+    }
+}
+@media (max-width: 768px){
+    .table section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media (max-width: 960px){
+    article{
+        width: 100%;
+    }
+    .main{
+        margin-bottom: 110vw;
+    }
+    aside{
+        width: 100vw;
+        height: 100vw;
+        box-sizing: border-box;
+        top: 100vh;
+    }
+    .play{
+        display: none;
+    }
+}
